@@ -8,9 +8,10 @@ The idea here is to explore automating bug validation and resolution using AI. W
 
 ## Completed
 Lesson 1: Interactive CLI that reads a source file and answers questions about it using the Claude API.
+Lesson 2: Tools and their use.
 
-## Current Work:
-Lesson 2: Tools and their use
+## Upcoming Work:
+Lesson 3: Use the GitHub API to work with real repositories.
 
 ## Usage
 `python interactive_ask_about_file.py <filepath>`
@@ -19,12 +20,14 @@ The script repeatedly prompts for a `Question:` where
 - "help" prints the list of commands
 - anything else is sent to Claude as a question to be answered about the given file
 
-`python tool_use_v4.py`
-- lists the files in the current directory
-- if there's a hello_claude.py file in the current directory, has Claude explain what it does, else says no such file found
+`python interactive_tool_use_with_search.py`
+The script repeatedly prompts for a `Question:` where
+- "exit" or "quit" exits the script
+- "help" prints the list of commands
+- anything else is sent to Claude as a question to be answered about files in the current directory
 
 ## Stack
 Python, Claude API (Anthropic)
 
 ## Planned
-Tool use for filesystem/GitHub operations, multi-step reasoning, automated PR generation.
+Tool use for GitHub operations, multi-step reasoning, automated PR generation.
